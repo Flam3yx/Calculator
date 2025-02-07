@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% viewport height, the viewport height is equal to the document's height */
+    background-color: hsl(0, 0%, 50%);
+}
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%); /* hsl is a color model that allows you to specify the hue, saturation, and lightness of a color */
+    border-radius: 25px;
+    max-width: 500px; /* set the maximum width of the calculator */
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem; /* 5rem equivals to 5 times the size of the root element's font size */
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns 1fr --> 1 fraction, a fraction of the free space in the grid container */
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    transform: scale(0.95); /* scale the button to 95% of its original size */
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operatori-btn {
+    /* color of the button orange*/
+    background-color: hsl(30, 100%, 45%);
+}
+
+.operatori-btn:hover {
+    background-color: hsl(30, 100%, 55%);
+}
+
+.operatori-btn:hover {
+    background-color: hsl(30, 100%, 65%);
+}

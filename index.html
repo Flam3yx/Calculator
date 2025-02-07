@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly> <!-- readonly attribute is used to prevent the user from changing the value of the input field (text area) -->
+        <div id="keys">
+            <button onclick="aggiungiVisualizza('+')" class="operatori-btn">+</button>
+            <button onclick="aggiungiVisualizza('7')">7</button>
+            <button onclick="aggiungiVisualizza('8')">8</button>
+            <button onclick="aggiungiVisualizza('9')">9</button>
+            <button onclick="aggiungiVisualizza('-')" class="operatori-btn">-</button>
+            <button onclick="aggiungiVisualizza('4')">4</button>
+            <button onclick="aggiungiVisualizza('5')">5</button>
+            <button onclick="aggiungiVisualizza('6')">6</button>
+            <button onclick="aggiungiVisualizza('*')" class="operatori-btn">*</button>
+            <button onclick="aggiungiVisualizza('1')">1</button>
+            <button onclick="aggiungiVisualizza('2')">2</button>
+            <button onclick="aggiungiVisualizza('3')">3</button>
+            <button onclick="aggiungiVisualizza('/')" class="operatori-btn">/</button>
+            <button onclick="aggiungiVisualizza('0')">0</button>
+            <button onclick="aggiungiVisualizza('.')">.</button>
+            <button onclick="calcola()">=</button>
+            <button onclick="cancella()" class="operatori-btn">C</button>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
