@@ -1,4 +1,4 @@
-const display = document.getElementById('display');
+const display = document.getElementById("display");
 
 function aggiungiVisualizza(input) {
     display.value += input; // Aggiunge il valore dell'input al display
